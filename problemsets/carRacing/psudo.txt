@@ -1,0 +1,38 @@
+Inputs:-
+    int T -- number of cases
+    for each case: 
+        R -- length of the track
+        C  -- number of cars
+        for each car:-
+            C_id -- car identifier
+            Cs -- cars normal speed
+            Ct -- cars turbo speed  (meters per second)
+            Cc -- cars turbo cooldown time (seconds)
+            Cd -- cars turbo boost duratin time (seconds)
+
+Outputs :-
+    must contain T lines 
+    order -- (" Case #t: C_id ")   t -- number of the case
+
+
+
+the race only have seconds every second car will teleport to the position of its speed
+every car can activate a boost for a limited time when activated it will work constantly untill it runs Out
+after cc seconds it will recharged 
+in the beging every car has full boost 
+
+which car will completer the track first print the id of the car 
+when in a tie the smallest id number will be the winner
+
+
+
+
+#### for the first test the answer should be 
+    Case #1: 1
+    Case #2: 2
+
+
+
+
+# for my purpose only
+every single time the turbo is filled up they will use it

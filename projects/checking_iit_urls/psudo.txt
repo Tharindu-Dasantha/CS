@@ -1,0 +1,1 @@
+get a list of urls (via internet or a csv file or also add the ability to add a url via terminal)
