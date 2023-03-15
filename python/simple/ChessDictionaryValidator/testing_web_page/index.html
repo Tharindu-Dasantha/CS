@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            document.addEventListener("DOMContentLoaded", function() {
+
+                // When correct answer is clicked, change color to green
+                let correct = document.querySelector(".right");
+                correct.addEventListener("click", function() {
+                    correct.style.backgroundColor = "green";
+                    document.querySelector("#responce").innerHTML = "Correct!";
+                });
+
+                // when it is wrong cange the color to red
+                let incorrect = document.querySelectorAll(".wrong");
+                for (let i = 0; i < incorrect.length; i++)
+                {
+                    incorrect[i].addEventListener("click", function()
+                    {
+                        incorrect[i].style.backgroundColor = "red";
+                        document.querySelector("#responce").innerHTML = "Incorrect!";
+                    });
+                }
+
+                // check for the free answer
+                document.querySelector("#check").addEventListener("click", function() {
+                    let input = document.querySelector("input");
+                    if (input.value.toLowerCase() == "london") {
+                        input.style.backgroundColor = "green";
+                        document.querySelector("#responce1").innerHTML = "correct!";
+                    }
+                    else {
+                        input.style.backgroundColor = "red";
+                        document.querySelector('#responce1').innerHTML = "incorrect!";
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>Hg is the chemical symbol of which element?</h3>
+                <!-- answers-->
+                <button class="wrong">Helium</button>
+                <button class="wrong">Hydrogen</button>
+                <button class="wrong">Iron</button>
+                <button class="right">Mercury</button>
+                <button class="wrong">Barium</button>
+
+                <p id="responce"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>what is the capital of england?</h3>
+                <input type="text">
+                <button id="check">Check</button>
+                <p id="responce1"></p>
+            </div>
+        </div>
+    </body>
+</html>
