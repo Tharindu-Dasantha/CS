@@ -1,0 +1,35 @@
+must plant F flowers in a field 
+To grow well every plant must be as far apart as possible
+field ia a rectangle in size of W X H
+distance between two flowers can be calculated using manhattan distance 
+manhattan distance:-        Dist((x1, y1), (x2, y2)) = |x1 - x2| + |y1 - y2|
+also the  miminum distance between any two flowers
+Dist_field = min(Dist((xi, yi), (xj, yj)))
+Task:- find the minimum distance to plant all the flowers in a field
+
+
+
+INPUTS:- 
+first line number of cases to solve T
+for t in T 
+W - width of the field
+H - height of the field
+F - the number of flowers to plant
+G - the number of ground patches in the field free of rocks
+then next for g in G lines
+cordinates og ground patches, one per line in the format X, Y where X is the column and Y is the row  ( cordinate values starts with 0, Upper left corner of the field has cordinate(0,0))
+
+OUTPUT:-
+template :- Case #t: D 
+D is the miminum distance between any two flowers
+
+
+
+
+psudo 
+open input.txt file 
+read the first lines == T
+form 1 to T :
+    each line W, H, F, G 
+    for 1 to G 
+        each line X, Y 

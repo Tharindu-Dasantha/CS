@@ -1,0 +1,3 @@
+In markdown heading are used as # more # there is smaller the txt is 
+We have 6 type of Headings that means 6# s 
+wr
