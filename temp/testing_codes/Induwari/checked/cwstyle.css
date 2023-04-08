@@ -1,0 +1,76 @@
+select{
+    display: block;
+    padding: 5px;
+    width: 50%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: red;
+    background-color: pink;
+}
+
+option{
+color:blue;
+} 
+ 
+*{margin:0;
+ padding:0;
+ box-sizing:boder-box;
+ outline:none;
+}
+
+body{
+   background: yellow;
+}
+
+.wrapper{
+   position:absolute;
+   top:50%;
+   left:50%;
+   transform:translate(-50%,-50%);
+   max-width:350px;
+   width:100%;
+   background:pink;
+   padding:60px;
+   border-radius:5px;
+   box-shadow:5px 5px 3px rgba(254,236,164,1);
+}
+
+.wrapper h2{
+   color: red;
+   margin-bottom:20px;
+   text-transform:uppercase;
+   letter-spacing:2px;
+}
+.wrapper .input_field{
+   margin-bottom:10px;
+   border:1px solid green;
+   padding:10px;
+   border-radius:5px;
+}
+.wrapper textarea{
+   height:80px;
+   width:100%;
+   resize:none;
+}
+
+.wrapper .btn input[type="submit"]{
+   border:0;
+   margin-top:15px;
+   padding: 10px;
+   width:100%;
+   background:black;
+   color:pink;
+   text-transform:uppercase;
+   letter-spacing:3px;
+   font-weight:bold;
+   border-radius:5px;
+   cursor:pointer;
+}
+.wrapper #errormsg{
+   margin-bottom:20px;
+   padding:10px;
+   background:blue;
+   text-align:center;
+   font-size:14px;
+   transition: all 0.5s liner;
+}

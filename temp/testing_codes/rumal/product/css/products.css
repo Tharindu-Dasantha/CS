@@ -1,0 +1,257 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+h1{
+  padding: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-style: oblique;
+  text-align: center;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  /* text-align: center; */
+  overflow-x: hidden;
+}
+
+.topic{
+  text-align: center;
+  padding: 30px;
+  background:black;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.main-container {
+  height: auto;
+  width: 100vw;
+  background-color: #121212;
+
+}
+
+.product-topic{
+  padding: 20px;
+}
+
+.product-container {
+  height: auto;
+  width: 99vw;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 8vh;
+}
+
+.product {
+  min-width: 250px;
+  width: 10vw;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: rgb(209, 200, 200);
+}
+
+.product > img {
+  width: 100%;
+  height: 100%;
+  min-height:300px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+}
+
+.product-price-p {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.add-button{
+  min-width: 220px;
+  height: 30px;
+  border-radius: 15px;
+  border-style: none;
+}
+.add-button:hover {
+  color: white;
+  background-color: black;
+}
+
+.cart-name {
+  padding:20px;
+  width :100vw;
+  text-align: center;
+  background-color: rgb(209, 200, 200);
+}
+
+#cart {
+  margin-top: 10vh;
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#cart-list {
+  width: 100vw;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.cart-item {
+  display: flex;
+  flex-direction: row;
+  border: solid grey 1px;
+  width: 40vw;
+  padding: 10px;
+  padding-left:4%;
+  padding-right: 4%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart-item > .cart-item-details {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart-item-details > img {
+  width: 100px;
+  height: 150px;
+  border-radius: 7px;
+}
+.cart-item-details > section {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 10px;
+}
+
+
+
+.cart-total-container {
+  width: 90%;
+  height: 5px;
+  background: #ffffff;
+  width: 100%;
+  padding-left: 6%;
+  padding-right: 6%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.cart-item-dlt {
+  padding-top:  4px;
+  padding-bottom: 4px;
+  padding-left: 6px;
+  padding-right: 6px;
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+}
+
+.cart-item input {
+  color:transperant;
+  border: none;
+  padding: 5px;
+  width: 40px;
+  border-radius: 2px;
+}
+
+.cart-total {
+  justify-self: end;
+}
+
+#order-button {
+  background-color: #1e90ff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#order-button:hover {
+  background-color: #0077b3;
+}
+
+#order-form {
+  display: none;
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  max-height: 990px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#order-form h3 {
+  text-align: center;
+  margin-bottom: 3px;
+  padding: 5px;
+  font-weight: 5000;
+  font-size: 18px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ff781e;
+  font-size: 18px;
+  text-align: center;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #1e90ff;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  background-color: #1e90ff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-left: 28%;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0077b3;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CW Comment Form</title>
+    <link rel="stylesheet" href="cwstyle.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h2>How we did!</h2>
+        <form id="myform">
+            <div class="input_field fieldone">
+                <label>How satisfied are you with our website?</label></p>
+                <label for="0">
+                    <input type="radio" name="delivery" id="0" value="0">
+                    Extremely Satisfied</label></br>
+                <label for="1">
+                    <input type="radio" name="delivery" id="1" value="1">
+                    Very Satisfied</label></br>
+                <label for="2">
+                    <input type="radio" name="delivery" id="2" value="2">
+                    Moderately Satisfied</label></br>
+                <label for="3">
+                    <input type="radio" name="delivery" id="3" value="3">
+                    Not so Satisfied</label></br>
+                <label for="4">
+                    <input type="radio" name="delivery" id="4" value="4">
+                    Not at all Satisfied</label>
+            </div>
+            <div id="error1"></div>
+
+            <div class="input_field">
+                <label for="feedback">Please could you tell us your reasons for giving this rating?</p>
+                </label>
+                <textarea name="feedback" id="feedback"></textarea>
+            </div>
+            </p>
+
+            <div class="input_field">
+                <label>Were you able to access the links on the website?</label></p>
+                <input type="radio" name="comm" id="y1" value="y">
+                <label for="y">Yes</label></br>
+                <input type="radio" name="comm" id="n1" value="n">
+                <label for="n">No</label></p>
+            </div>
+
+            <div class="input_field">
+                <label>How did you want to complete this task today?</label>
+                <select name="languages" id="lang">
+                    <option value="select">-- Please Select --</option>
+                    <option value="phone">Phone</option>
+                    <option value="website">website</option>
+                    <option value="webchat">Webchat</option>
+                    <option value="abc">Abc</option>
+                    <option value="xyz">Xyz</option>
+                    <option value="pqr">Pqr</option>
+
+                </select>
+            </div>
+
+            <div class="input_field">
+                <label>Were you able to access the links on the website?</label></p>
+                <input type="radio" name="comm" id="y2" value="y">
+                <label for="y">Yes</label></br>
+                <input type="radio" name="comm" id="n2" value="n">
+                <label for="n">No</label></p>
+            </div>
+            <div class="btn">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

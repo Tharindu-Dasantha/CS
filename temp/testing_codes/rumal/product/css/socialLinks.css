@@ -1,0 +1,19 @@
+.socialLinks{
+    padding: 5px;
+    font-size: 30px;
+}
+
+.fa-youtube{
+    color: red;
+}
+
+.fa-facebook{
+    color: darkblue;
+}
+.fa-twitter{
+    color: cyan;
+}
+.fa-instagram{
+    color: #800080;
+}
+

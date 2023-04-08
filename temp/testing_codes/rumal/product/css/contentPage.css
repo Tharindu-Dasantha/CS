@@ -1,0 +1,128 @@
+
+h1, .month, h3 {
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    color: #333;
+}
+
+.month {
+    font-size: 24px;
+    color: #555;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: inline-block;
+    background-color: #95a8ce;
+}
+
+h3 {
+    font-size: 20px;
+    color: #777;
+    padding:10px;
+}
+.topic-box {
+    border: 1px solid #121212;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.topic-box {
+    border: 1px solid #121212;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f2f2f2;
+}
+.topic-box {
+    box-sizing: border-box;
+    width: 70%;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #121212;
+    text-align: center;
+}
+
+.topic-box h2 {
+    font-size: 24px;
+    margin-top: 0;
+    color: white;
+}
+
+.topic-box h3 {
+    font-size: 20px;
+    margin-top: 30px;
+    background-color: #525252;
+    color: white;
+}
+
+.topic-box p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 10px;
+    background-color: rgba(45, 43, 43, 0.99);
+}
+.contentImg img{
+    /*padding: 5px;*/
+
+    height: 25%;
+    width: 25%;
+    background-size: cover;
+    border: 5px solid white ;
+
+}
+h1 {margin-top:5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom:6vh;
+}
+p {
+    padding: 3%;
+    line-height: 2vh;
+    color: white;
+    border-radius: 20px;
+}
+.mainImage img{
+    background-repeat: repeat;
+    filter: brightness(30%); filter: blur(15px);
+    height: 1200vh;
+    position: absolute;
+    width: 100%;
+
+}
+
+
+/* CSS */
+.button-31 {
+    background-color: #222;
+    border-radius: 4px;
+    border-style: none;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 0;
+    max-width: none;
+    min-height: 44px;
+    min-width: 10px;
+    outline: none;
+    overflow: hidden;
+    padding: 9px 20px 8px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+}
+.button-31 a{
+    color: white;
+}
+
+.button-31:hover,
+.button-31:focus {
+    opacity: .75;
+}
